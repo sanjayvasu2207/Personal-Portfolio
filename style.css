@@ -1,4 +1,4 @@
-.panel{
+.yt{
     background-color: rgb(48, 210, 255);
     height: 300px;
     width: device-width;
@@ -27,6 +27,13 @@
     height: 50px;
     width: 200px;
     margin-left: 500px;
+}
+
+.image{
+    height: 523px;
+    width: 980px;
+    margin-left: 800px;
+    margin-top: 100px;
 }
 
 #text{
