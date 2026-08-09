@@ -1,23 +1,35 @@
-/* General design tokens */
+/* General design tokens  - all vars in one place */
 
 :root {
-    
+    /* base colours */
     --bg: #0b0f12;
     --panel: #11171c;
     --panel-raised: #161d23; /* lighter than panel for hovering stuff */
     --border: #1f2b30;
 
+    /* text */
     --text: #c9d6da;
     --text-dim: #62767d;
     --text-bright: #eef4f5;
 
+    /* accents */
     --signal: #4fb3ac;
     --signal-dim: #3a8b85;
     --amber: #b98b4e;
 
+    /* fonts */
     --font-mono: "JetBrains Mono", "Fira Code", monospace;
     --font-body: "IBM Plex Sans", -apple-system, sans-serif;
 
+    /* layout */
     --content-width: 880px;
     --radius: 3px;
 }
+
+/* resetting the default browser rules cuz they r annoying */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
