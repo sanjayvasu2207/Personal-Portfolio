@@ -48,6 +48,7 @@ body {
     min-height: 100vh;
 }
 
+/* removing the default bullets style since we style it ourself instead */
 ul {
     list-style: none;
 }
@@ -60,4 +61,14 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+/* for less motion if required by system */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
