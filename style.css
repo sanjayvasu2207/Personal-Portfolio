@@ -1,0 +1,23 @@
+/* General design tokens */
+
+:root {
+    
+    --bg: #0b0f12;
+    --panel: #11171c;
+    --panel-raised: #161d23; /* lighter than panel for hovering stuff */
+    --border: #1f2b30;
+
+    --text: #c9d6da;
+    --text-dim: #62767d;
+    --text-bright: #eef4f5;
+
+    --signal: #4fb3ac;
+    --signal-dim: #3a8b85;
+    --amber: #b98b4e;
+
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --font-body: "IBM Plex Sans", -apple-system, sans-serif;
+
+    --content-width: 880px;
+    --radius: 3px;
+}
