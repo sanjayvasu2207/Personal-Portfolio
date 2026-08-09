@@ -72,3 +72,20 @@ img {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* scanlines effect */
+
+.scanlines {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.015) 0px,
+        rgba(255, 255, 255, 0.015) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    opacity: 0.5;
+}
