@@ -237,3 +237,18 @@ img {
     color: var(--text-dim);
     max-width: 46ch;
 }
+
+.prompt-line {
+    margin-top: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+}
+
+.prompt-symbol {
+    color: var(--signal);
+    font-size: 0.85rem;
+    white-space: nowrap; /* always displayed as one line only */
+}
