@@ -225,3 +225,9 @@ img {
     min-height: 4.5em;
 }
 
+.hero-name {
+    margin-top: 1rem;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    color: var(--text-bright);
+    letter-spacing: 0.02em;
+}
