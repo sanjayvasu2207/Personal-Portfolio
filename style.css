@@ -252,3 +252,14 @@ img {
     font-size: 0.85rem;
     white-space: nowrap; /* always displayed as one line only */
 }
+
+.prompt-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-bright);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    caret-color: var(--signal); /* Cursor colour */
+}
