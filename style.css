@@ -231,3 +231,9 @@ img {
     color: var(--text-bright);
     letter-spacing: 0.02em;
 }
+.hero-tagline {
+    margin-top: 1.25rem;
+    font-family: var(--font-body);
+    color: var(--text-dim);
+    max-width: 46ch;
+}
