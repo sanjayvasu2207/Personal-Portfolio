@@ -99,6 +99,8 @@ img {
     border-bottom: 1px solid var(--border);
 }
 
+/* navigation bar */
+
 .nav {
     max-width: var(--content-width);
     margin: 0 auto;
@@ -166,5 +168,28 @@ img {
     width: 20px;
     height: 2px;
     background: var(--text);
+}
+
+/* terminal style for hero banner */
+
+.hero {
+    padding: 4rem 1.5rem 3rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+}
+
+.terminal-window {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(79, 179, 172, 0.06)
+}
+
+.boot-lines {
+    color: var(--signal-dim);
+    font-size: 0.8rem;
+    white-space: pre-line;
+    min-height: 4.5em;
 }
 
