@@ -186,6 +186,38 @@ img {
     box-shadow: 0 0 40px rgba(79, 179, 172, 0.06)
 }
 
+.terminal-titlebar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    background: var(--panel-raised);
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.terminal-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+}
+
+.terminal-title {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim)
+}
+
+.terminal-body {
+    padding: 1.75rem;
+    font-family: var(--font-mono);
+}
+
 .boot-lines {
     color: var(--signal-dim);
     font-size: 0.8rem;
