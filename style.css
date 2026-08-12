@@ -267,3 +267,14 @@ img {
 .prompt-input::placeholder {
     color: var(--text-dim);
 }
+
+.prompt-output {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    min-height: 1.2em;
+}
+
+.prompt-output strong {
+    color: var(--signal);
+}
