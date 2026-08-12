@@ -99,3 +99,22 @@ img {
     border-bottom: 1px solid var(--border);
 }
 
+.nav {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--text-bright);
+    font-size: 1rem;
+}
+
+.logo span {
+    color: var(--signal);
+}
