@@ -310,3 +310,26 @@ img {
     color: var(--text-bright);
     margin-bottom: 2rem;
 }
+
+/* About Me section */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.avatar-frame {
+    width: 140px;
+    height: 140px;
+    border: 1px solid var(--signal-dim);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    color: var(--signal);
+    background: var(--panel);
+}
