@@ -356,3 +356,14 @@ img {
     display: flex;
     gap: 0.75rem;
 }
+
+.fact-key {
+    color: var(--text-dim);
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.fact-val {
+    color: var(--text);
+}
+
