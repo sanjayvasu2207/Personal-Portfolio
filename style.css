@@ -473,4 +473,27 @@ img {
     font-size: 0.8rem;
     color: var(--signal);
 }
-.card-link:hover {text-decoration: underline;}
+.card-link:hover { text-decoration: underline; }
+
+/* Awards section */
+
+.log-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+}
+
+.log-entry {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.log-time {
+    font-family: var(--font-mono);
+    color: var(--signal);
+    width: 3.5rem;
+    flex-shrink: 0;
+}
