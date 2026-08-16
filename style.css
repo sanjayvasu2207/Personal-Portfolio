@@ -532,3 +532,32 @@ img {
     background: var(--bg);
     border: 2px solid var(--signal);
 }
+
+.timeline-content h3 {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--text-bright);
+}
+
+.timeline-dates {
+    font-weight: 400;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
+
+.timeline-dates {
+    font-weight: 400;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+}
+
+.timeline-org {
+    font-size: 0.82rem;
+    color: var(--signal);
+    margin: 0.2rem 0 0.5rem;
+}
+
+.timeline-content p:last-child {
+    font-size: 0.88rem;
+    color: var(--text-dim);
+}
