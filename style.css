@@ -367,3 +367,32 @@ img {
     color: var(--text);
 }
 
+/* Interests section*/
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+}
+
+.interest-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.interest-card:hover {
+    border-color: var(--signal-dim);
+    transform: translateX(4px);
+}
+
+.card-number {
+    font-family: var(--font-mono);
+    color: var(--signal);
+    font-size: 0.75rem;
+}
