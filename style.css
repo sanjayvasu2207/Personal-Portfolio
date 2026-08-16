@@ -396,3 +396,81 @@ img {
     color: var(--signal);
     font-size: 0.75rem;
 }
+
+/* Projects section */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    gap: 1.25rem;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    border-color: var(--signal-dim);
+    box-shadow: 0 0 24px rgba(79, 179, 172, 0.08);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+}
+
+.card-top h3 {
+    font-family: var(--font-mono);
+    color: var(--text-bright);
+    font-size: 1rem;
+}
+
+.card-status {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+}
+.status-live {color: var(--signal)}
+.status-wip {color: var(--amber)}
+
+.project-card p {
+    font-size: 0.88rem;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+}
+
+.tag-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+}
+
+.tag-stack li {
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius);
+}
+
+.card-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-link {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--signal);
+}
+.card-link:hover {text-decoration: underline;}
