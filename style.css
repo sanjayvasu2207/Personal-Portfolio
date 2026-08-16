@@ -583,3 +583,26 @@ img {
     justify-content: center;
     gap: 1rem;
 }
+
+.btn {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+.btn-primary {
+    color: var(--bg);
+    background: var(--signal);
+    border-color: var(--signal);
+}
+.btn-primary:hover { background: var(--signal-dim); }
+
+.btn-ghost {
+    color: var(--text);
+}
+.btn-ghost:hover {
+    border-color: var(--signal-dim);
+    color: var(--signal);
+}
