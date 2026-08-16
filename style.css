@@ -606,3 +606,31 @@ img {
     border-color: var(--signal-dim);
     color: var(--signal);
 }
+
+/* Website footer */
+
+.site-footer {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+.footer-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--signal);
+    box-shadow: 0 0 6px var(--signal);
+}
