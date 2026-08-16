@@ -561,3 +561,25 @@ img {
     font-size: 0.88rem;
     color: var(--text-dim);
 }
+
+/* Contact Me section */
+
+.section-contact {
+    text-align: center;
+}
+.section-contact .sectionlabel, .section-contact .section-heading {
+    display: block;
+}
+
+.contact-copy {
+    color: var(--text-dim);
+    max-width: 40ch;
+    margin: 0 auto 2rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
