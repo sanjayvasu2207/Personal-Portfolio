@@ -634,3 +634,37 @@ img {
     background: var(--signal);
     box-shadow: 0 0 6px var(--signal);
 }
+
+/* Moblie layout */
+
+@media (max-width: 640px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--panel);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+
+        display: none; /* toggled by JS */
+    }
+    .nav-links.open {
+        display: flex;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar-frame {
+        width: 90px;
+        height: 90px;
+    }
+}
