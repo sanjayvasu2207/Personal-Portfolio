@@ -98,3 +98,27 @@ function setupScrollReveal() {
 
     sections.forEach((section) => observer.observe(section));
 }
+
+function setupMobileNav() {
+    const toggle = document.getElementById("navToggle");
+    const links = document.getElementById("navLinks")
+
+    toggle.addEventListener("click", () => {
+        const isOpen = links.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    links.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+            links.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    runBootSequence();
+    setupTerminalPrompt();
+    setupScrollReveal();
+    setupMobileNav();
+})

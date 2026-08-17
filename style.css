@@ -301,7 +301,7 @@ img {
     transition: opacity 0.6s ease, transform 0.6 ease;
 }
 
-.section.inview {
+.section.in-view {
     opacity: 1;
     transform: translateY(0);
 }
