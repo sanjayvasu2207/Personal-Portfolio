@@ -121,4 +121,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setupTerminalPrompt();
     setupScrollReveal();
     setupMobileNav();
-})
+});

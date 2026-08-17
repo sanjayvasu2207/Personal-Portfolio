@@ -63,7 +63,7 @@ img {
     display: block;
 }
 
-/* for less motion if required by system */
+/* for less motion if required by system
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after {
@@ -71,7 +71,7 @@ img {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-}
+} */
 
 /* scanlines effect */
 
@@ -298,9 +298,8 @@ img {
     /* scroll reveal effect */
     opacity: 0;
     transform: translateY(16px);
-    transition: opacity 0.6s ease, transform 0.6 ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .section.in-view {
     opacity: 1;
     transform: translateY(0);
