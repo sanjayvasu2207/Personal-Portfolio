@@ -1,6 +1,6 @@
-/* 
-Sequence which types out lines on the hero terminal on boot
-*/
+
+
+// Sequence which types out lines on the hero terminal on boot
 
 function runBootSequence() {
     const bootElement = document.getElementById("bootLines")
@@ -34,4 +34,22 @@ function runBootSequence() {
     }
 
     typeNextChar();
+}
+
+// Interactive prompt on the terminal bottom
+
+function setupTerminalPrompt() {
+    const input = document.getElementById("terminalInput");
+    const output = document.getElementById("promptOutput");
+
+    const commands = {
+        help: () =>
+            "available commands: about, projects, awards, experience, contact, help",
+        about: () => navigateTo("#about", "opening about section..."),
+        projects: () => navigateTo("#projects", "opening projects section..."),
+        awards: () => navigateTo("#awards", "opening awards section..."),
+        experience: () => navigateTo("#experience", "opening experience section..."),
+        contact: () => navigateTo("#contact", "opening contact section..."),
+    };
+
 }
