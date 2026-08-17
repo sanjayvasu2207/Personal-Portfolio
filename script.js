@@ -81,3 +81,20 @@ function escapeHtml(str) {
     div.textContent = str;
     return div.innerHTML;
 }
+
+function setupScrollReveal() {
+    const sections = document.querySelectorAll(".section");
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.15 } //make it animate when 15% of section is visible
+    );
+
+    sections.forEach((section) => observer.observe(section));
+}
