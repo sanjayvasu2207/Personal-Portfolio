@@ -52,4 +52,32 @@ function setupTerminalPrompt() {
         contact: () => navigateTo("#contact", "opening contact section..."),
     };
 
+    function navigateTo(id, message) {
+        const target = document.querySelector(id);
+        if (target) target.scrollIntoView( {behavior: "smooth"} );
+        return message;
+    }
+
+    input.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter") return;
+
+        const rawCommand = input.value.trim().toLowerCase();
+        input.value = "";
+
+        if (!rawCommand) return;
+
+        const handler = commands[rawCommand];
+        const response = handler
+            ? handler()
+            : `command not found: ${rawCommand} - try "help"`;
+
+        output.innerHTML = `<strong>$</strong> ${escapeHtml(rawCommand)}<br>${escapeHtml(response)}`;
+    });
+}
+
+//to make sure anything user types is plaintext NOT html
+function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
 }
